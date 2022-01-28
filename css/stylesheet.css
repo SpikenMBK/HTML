@@ -1,0 +1,121 @@
+
+html, body, h1, h2, h3, p, ol, ul, li, a, article{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+body{
+    background-color: beige;
+    height: 1000px;
+    width: 1300px;
+   
+}
+
+.Container{
+
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 850px;
+    width: 1024px;
+    padding: 3px 3px 3px 3px;
+   
+    /*padding: 20px 20px 20px 20px ;
+    margin: auto;
+    width: 100vw;
+    height: 100vw;*/
+    background-color: rgb(61, 56, 50);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 70px;
+    gap: 10px;
+}
+.Sidebar{
+    background-color: cadetblue;
+    /*height: 700px;
+    width: 224px;*/
+    padding-left: 45px;
+    padding-top: 10px;
+   
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    font-family: sans-serif;
+}
+
+.Header{
+   
+    background-color: cornflowerblue;
+    /*height: 100px;
+    width: 1024px ;*/
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-family: sans-serif;
+    
+}
+/*.Header > Logo {
+    width: 60px;
+    float: left;
+}*/
+.Over{
+    height: 30%;
+    /*background-color: gray;*/
+  
+}
+.Article1{
+    float:left;
+    height: 70%;
+    width: 50%;
+    background-color: lightgray;
+    padding: 15px 15px 5px 5px;
+   
+   
+}
+.Article2{
+   
+    background-color: rgb(97, 19, 19);
+    height: 70%;
+    padding: 15px 15px 5px 5px;
+    margin-left: 420px;
+   
+}
+.Main-nav li{
+    display: inline;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+p{
+    padding-left: 10px;
+}
+h2{
+    padding: 10px;
+}
+.Login-container
+{
+    margin-top: 5px;
+    margin-left: 820px;
+}
+.Main{
+    background-color: rgb(246, 240, 255);
+    /*height: 700px;
+    width: 800px;*/
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    font-family: sans-serif;
+    
+    
+}
+
+.Footer{
+    background-color: darkgray;
+    /*height: 50px;
+    width: 1024px;*/
+    text-align: center;
+    padding-top: 15px;
+    grid-column: 1 / span 5;
+    font-family: sans-serif;
+}
