@@ -1,121 +1,183 @@
-
-html, body, h1, h2, h3, p, ol, ul, li, a, article{
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
 body{
     background-color: beige;
-    height: 1000px;
-    width: 1300px;
-   
-}
-
-.Container{
-
-    margin-left: 35%;
-    margin-right: 35%;
-    height: 850px;
-    width: 1024px;
-    padding: 3px 3px 3px 3px;
-   
-    /*padding: 20px 20px 20px 20px ;
-    margin: auto;
-    width: 100vw;
-    height: 100vw;*/
-    background-color: rgb(61, 56, 50);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr 70px;
-    gap: 10px;
-}
-.Sidebar{
-    background-color: cadetblue;
-    /*height: 700px;
-    width: 224px;*/
-    padding-left: 45px;
-    padding-top: 10px;
-   
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: span 2;
-    font-family: sans-serif;
-}
-
-.Header{
-   
-    background-color: cornflowerblue;
-    /*height: 100px;
-    width: 1024px ;*/
-    grid-column-start: 1;
-    grid-column-end: 6;
-    font-family: sans-serif;
+    font-family: sans-serif ;
     
 }
-/*.Header > Logo {
-    width: 60px;
-    float: left;
-}*/
-.Over{
-    height: 30%;
-    /*background-color: gray;*/
+.Container{
+    width: 1024px;
+    margin: auto;
+    background-color: rgb(23, 128, 128);
+   
+
+
+}
+nav{
+   
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 25px;
+    background-image: linear-gradient(lightgrey,rgb(49, 37, 41) );
+    
+}
+nav a {
+    background: #395870;
+    background: linear-gradient(#49708f, #293f50);
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    color: #fff;
   
+    text-decoration: none;
+  }
+nav li{
+    display: inline;
+    background-color: cornflowerblue;
+    margin: 10px;
+}
+.menusida{
+    float: right;
+    margin-top: 0px;
+}
+
+button {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.Main h1{
+    background-color: rgb(177, 173, 173);
+    grid-area: h1;
+    padding-left: 5px;
+    text-transform: uppercase;
+    border-radius: 10px;
+   
+   
+}
+.Main form{
+    background-color: antiquewhite;
+   grid-column: 1/5;
+   grid-row: 3/5;
+   padding-top: 30px;
+   padding-left: 10px;
+   border-radius: 10px;
+    /*height: 70%;
+    width: 75%;
+    margin: 1%;
+    padding-left: 20px;
+    padding-top: 40px;
+    
+    float: left;
+    border-radius: 5px;
+    box-sizing: border-box;*/
+}
+
+
+.Over {
+    grid-area: op;
+    padding-left: 5px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    
+   
 }
 .Article1{
-    float:left;
-    height: 70%;
-    width: 50%;
-    background-color: lightgray;
-    padding: 15px 15px 5px 5px;
-   
+    padding-left: 5px;
+    background-color: rgb(212, 207, 210);
+    float: left;
+    grid-area: ar1;
    
 }
 .Article2{
-   
-    background-color: rgb(97, 19, 19);
-    height: 70%;
-    padding: 15px 15px 5px 5px;
-    margin-left: 420px;
+    padding-left: 5px;
+    background-color: rgb(204, 199, 200);
+    float: left;
+    grid-area: ar2;
    
 }
+
+.Main{
+    grid-gap: 5px;
+    display: grid;
+    padding-left: 5px;
+    grid-template-areas: "h1 h1 . . sb"
+    "op op op op sb"
+    "op op op op sb"
+    "op op op op sb"
+    "ar1 ar1 ar2 ar2 sb"
+    "ar1 ar1 ar2 ar2 sb"
+    "ar1 ar1 ar2 ar2 sb"
+    "ar1 ar1 ar2 ar2 sb"
+    ;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(99, 6, 6);
+   
+    
+   
+}
+.Sidebar{
+    
+    background-color: #999;
+    text-align: center; 
+    background-image: linear-gradient(lightgrey, rgb(54, 43, 52));
+    text-align: center;
+
+    grid-area: sb;
+   
+
+}
+
+footer{
+   
+    
+    color: #4CAF50;
+    background-image: linear-gradient(lightgrey, rgb(54, 43, 52));
+    text-align: center;
+    padding-top: 10px;
+    height: 60px;
+   
+    
+    
+}
+
+
+
+/*
+.Main-nav{
+    background-color: darkslategrey;
+    color: white;
+    height: 60px;
+    width: 100%;
+    padding-top: 5px;
+    box-sizing: border-box;
+    
+}
+
+
+
 .Main-nav li{
     display: inline;
-    float: left;
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-p{
-    padding-left: 10px;
-}
-h2{
-    padding: 10px;
-}
-.Login-container
-{
-    margin-top: 5px;
-    margin-left: 820px;
-}
-.Main{
-    background-color: rgb(246, 240, 255);
-    /*height: 700px;
-    width: 800px;*/
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: span 2;
-    font-family: sans-serif;
     
     
-}
+  
+}*/
 
-.Footer{
-    background-color: darkgray;
-    /*height: 50px;
-    width: 1024px;*/
-    text-align: center;
-    padding-top: 15px;
-    grid-column: 1 / span 5;
-    font-family: sans-serif;
-}
+
+
+
